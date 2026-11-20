@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/CSS/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Emploi du temps</title>
+</head>
+<body class="bg-light">
+    <header class="container py-4">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-8">
+                <h3 class="mb-1">Emploi du Temps</h3>
+                <p class="text-muted mb-0">Voici l'ensemble des cours dans ta semaine</p>
+            </div>
+            <div class="col-md-4 d-none d-md-flex align-items-center justify-content-end gap-2">
+                <h2 class="mb-0">SL4IN</h2>
+                <img src="assets/images/frog_meme_cloud9.png" alt="Logo utilisateur" class="logo rounded-circle">
+            </div>
+        </div>
+    </header>
+
+    <main class="container pb-4">
+        <div class="row g-2">
+            
+            <div class="col-lg d-none d-lg-block">
+                <div class="entete">Horaires</div>
+                <div class="creneau horaire">8h - 10h</div>
+                <div class="creneau horaire">10h - 12h</div>
+                <div class="pause">Pause</div>
+                <div class="creneau horaire">15h - 17h</div>
+                <div class="creneau horaire">17h - 19h</div>
+            </div>
+
+            <!-- Lundi -->
+            <div class="col-12 col-md-6 col-lg">
+                <div class="entete">Lundi</div>
+                <div class="creneau"><span class="heure">8h - 10h</span><strong>Algorithmique</strong><small>Salle A1</small></div>
+                <div class="creneau"><span class="heure">10h - 12h</span><strong>Mathématiques</strong><small>Salle B2</small></div>
+                <div class="pause">Pause</div>
+                <div class="creneau"><span class="heure">15h - 17h</span><strong>Anglais</strong><small>Salle C3</small></div>
+                <div class="creneau vide"><span class="heure">17h - 19h</span>—</div>
+            </div>
+
+            <!-- Mardi -->
+            <div class="col-12 col-md-6 col-lg">
+                <div class="entete">Mardi</div>
+                <div class="creneau"><span class="heure">8h - 10h</span><strong>Bases de données</strong><small>Salle A2</small></div>
+                <div class="creneau"><span class="heure">10h - 12h</span><strong>Réseaux</strong><small>Salle B1</small></div>
+                <div class="pause">Pause</div>
+                <div class="creneau vide"><span class="heure">15h - 17h</span>—</div>
+                <div class="creneau"><span class="heure">17h - 19h</span><strong>TD Algorithmique</strong><small>Salle A1</small></div>
+            </div>
+
+            <!-- Mercredi -->
+            <div class="col-12 col-md-6 col-lg">
+                <div class="entete">Mercredi</div>
+                <div class="creneau"><span class="heure">8h - 10h</span><strong>Programmation Web</strong><small>Labo 1</small></div>
+                <div class="creneau"><span class="heure">10h - 12h</span><strong>Programmation Web</strong><small>Labo 1</small></div>
+                <div class="pause">Pause</div>
+                <div class="creneau"><span class="heure">15h - 17h</span><strong>Systèmes d'exploitation</strong><small>Salle B2</small></div>
+                <div class="creneau vide"><span class="heure">17h - 19h</span>—</div>
+            </div>
+
+            <!-- Jeudi -->
+            <div class="col-12 col-md-6 col-lg">
+                <div class="entete">Jeudi</div>
+                <div class="creneau"><span class="heure">8h - 10h</span><strong>Mathématiques</strong><small>Salle B2</small></div>
+                <div class="creneau vide"><span class="heure">10h - 12h</span>—</div>
+                <div class="pause">Pause</div>
+                <div class="creneau"><span class="heure">15h - 17h</span><strong>TP Réseaux</strong><small>Labo 2</small></div>
+                <div class="creneau"><span class="heure">17h - 19h</span><strong>TP Réseaux</strong><small>Labo 2</small></div>
+            </div>
+
+            <!-- Vendredi -->
+            <div class="col-12 col-md-6 col-lg">
+                <div class="entete">Vendredi</div>
+                <div class="creneau"><span class="heure">8h - 10h</span><strong>Génie logiciel</strong><small>Salle A2</small></div>
+                <div class="creneau"><span class="heure">10h - 12h</span><strong>Communication</strong><small>Salle C1</small></div>
+                <div class="pause">Pause</div>
+                <div class="creneau vide"><span class="heure">15h - 17h</span>—</div>
+                <div class="creneau vide"><span class="heure">17h - 19h</span>—</div>
+            </div>
+
+            <!-- Samedi -->
+            <div class="col-12 col-md-6 col-lg">
+                <div class="entete">Samedi</div>
+                <div class="creneau"><span class="heure">8h - 10h</span><strong>Devoir surveillé</strong><small>Amphi</small></div>
+                <div class="creneau vide"><span class="heure">10h - 12h</span>—</div>
+                <div class="pause">Pause</div>
+                <div class="creneau vide"><span class="heure">15h - 17h</span>—</div>
+                <div class="creneau vide"><span class="heure">17h - 19h</span>—</div>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/JS/bootstrap.bundle.js"></script>
+</body>
+</html>

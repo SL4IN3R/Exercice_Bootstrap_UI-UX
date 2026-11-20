@@ -1,0 +1,71 @@
+/* Logo utilisateur dans le header */
+.logo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+/* En-tête de chaque colonne (jour / horaires) */
+.entete {
+    background-color: #343a40;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Un créneau de cours */
+.creneau {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.creneau small {
+    color: #6c757d;
+}
+
+/* Créneau libre */
+.creneau.vide {
+    background-color: #f8f9fa;
+    color: #adb5bd;
+}
+
+/* Cases de la colonne Horaires */
+.creneau.horaire {
+    background-color: #e9ecef;
+    font-weight: bold;
+}
+
+/* Séparateur de la pause de midi */
+.pause {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #6c757d;
+    padding: 0.25rem;
+    margin-bottom: 0.5rem;
+    border-top: 1px dashed #ced4da;
+    border-bottom: 1px dashed #ced4da;
+}
+
+/* Heure affichée dans chaque créneau (petits écrans uniquement) */
+.heure {
+    font-size: 0.75rem;
+    color: #6c757d;
+}
+
+
+@media (min-width: 992px) {
+    .heure {
+        display: none;
+    }
+}
